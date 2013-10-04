@@ -49,6 +49,8 @@ Installing the binary into a more correct location is left as an exercise for th
 ## TODO
 
 * Listen for a button press rather than polling
+* Flash one of the LEDs (GPIO7) when the button is pressed to indicate something is happening
+* Raspbian/Ubuntu/Other distro install instructions in the README (I'm not going to do this myself)
 
 ## Author
 

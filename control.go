@@ -18,7 +18,7 @@ const (
 var pretend bool
 
 func init() {
-	flag.BoolVar(&pretend, "pretend", false, "Don't really chut down, ust flash the LED on button press. Useful for debugging.")
+	flag.BoolVar(&pretend, "pretend", false, "Don't really shut down, just flash the LED on button press. Useful for debugging.")
 	flag.Parse()
 }
 
@@ -53,7 +53,7 @@ func main() {
 				done_chan <- 1
 			}()
 
-			log.Println("Shutting down the system as due to power button press")
+			log.Println("Shutting down the system due to power button press")
 			if !pretend {
 				cmd := exec.Command("systemctl", "poweroff")
 				err := cmd.Run()

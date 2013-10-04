@@ -31,6 +31,7 @@ WantedBy=multi-user.target
 
 Now run:
 
+    systemctl enable power_control
     systemctl start power_control.service
 
 Check the process is running with ps / systemctl, and you should now be able to power down the Raspberry Pi by momentarily pressing the MotorPiTX power button.

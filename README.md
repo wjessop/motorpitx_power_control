@@ -35,6 +35,8 @@ Now run:
 
 Check the process is running with ps / systemctl, and you should now be able to power down the Raspberry Pi by momentarily pressing the MotorPiTX power button.
 
+Installing the binary into a more correct location is left as an exercise for the user.
+
 ## Contributing
 
 1. Fork it

@@ -36,6 +36,12 @@ Now run:
 
 Check the process is running with ps / systemctl, and you should now be able to power down the Raspberry Pi by momentarily pressing the MotorPiTX power button.
 
+You can test that the program is running OK by passing in the -pretend flag:
+
+    ./motorpitx_power_control -pretend true
+
+The program will run as normal, flashing the status LED if the button is pressed, but will not shut down the Pi. Note that the state of the power button will remain high until a total power off/on cycle, so if you start the program with -pretend true then press the power button, then subsequently start the program with no -pretend value set your system will shut down!
+
 Installing the binary into a more correct location is left as an exercise for the user.
 
 ## Contributing
@@ -49,7 +55,6 @@ Installing the binary into a more correct location is left as an exercise for th
 ## TODO
 
 * Listen for a button press rather than polling
-* Flash one of the LEDs (GPIO7) when the button is pressed to indicate something is happening
 * Raspbian/Ubuntu/Other distro install instructions in the README (I'm not going to do this myself)
 
 ## Author

@@ -6,7 +6,7 @@ A program to listen for MotorPiTX power button presses and cleanly shutdown your
 
 	GOOS=linux GOARM=6 GOARCH=arm go build
 
-then copy MotorPiTX_power_button_control to the Raspberry Pi.
+then copy motorpitx_power_control to the Raspberry Pi.
 
 ## Installing
 
@@ -23,7 +23,7 @@ With contents:
 Description=MotorPiTX power button control
 
 [Service]
-ExecStart=/root/MotorPiTX_power_button_control
+ExecStart=/root/motorpitx_power_control
 
 [Install]
 WantedBy=multi-user.target

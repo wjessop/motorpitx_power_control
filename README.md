@@ -30,9 +30,11 @@ WantedBy=multi-user.target
 ````
 
 Now run:
-
+    touch /etc/rpi-issue
     systemctl enable power_control
     systemctl start power_control.service
+
+The /etc/rpi-issue file is required by the hwio lib, it just needs to exist, but it doesn't in Arch Linux so we create it.
 
 Check the process is running with ps / systemctl, and you should now be able to power down the Raspberry Pi by momentarily pressing the MotorPiTX power button.
 

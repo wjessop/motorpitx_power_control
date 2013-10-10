@@ -14,7 +14,7 @@ Instructions for Arch linux.
 
 Create a a file
 
-    /etc/systemd/power_control.service
+    /etc/systemd/system/power_control.service
 
 With contents:
 
